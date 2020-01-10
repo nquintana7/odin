@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+<title>Google</title>
+<div id="nav">
+<div class="topleft">
+<ul>
+<li><a href="sape.html">Über Google</a></li>
+<li><a href="store.php">Store</a></li>
+</ul>
+</div>
+<div class="fotos">
+<ul>
+<li style="margin-right:3px;"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" style="width:25px;height:25px;"></li>
+<li><img src="https://lh3.googleusercontent.com/-nBmxFTISfWM/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rc4dVWRSYnpPfu2SvzKH3JJ0Jp2_g.CMID/s32-c/photo.jpg" style="border-radius: 50%;"></li>
+</ul>
+</div>
+<div class="topright">
+<ul>
+<li><a href="http://gmail.com">Gmail</a></li>
+<li><a href="tuvieja.php">Bilder</a></li>
+</ul>
+</div>
+</div>
+</head>
+<body>
+<div class="centro" id="ola">
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
+<input type="text" style="width: 580px;height:25px;" name="search">
+<div id="bottons"><input type="submit" value="Google Suche" style="margin:25px 20px 0 0;" id="button1">
+<input type="submit" value="Auf gut Glück!">
+</div>
+</div>
+<div class="footer">
+<span>Deutschland</span>
+</div>
+<div class="footer2">
+<ul>
+<li>Werbeprogramme</li>
+<li>Unternehmen</li>
+<li>Wie funktioniert die Google-Suche?</li>
+</ul>
+<ul id="right">
+<li>Datenschutzerklärung</li>
+<li>Nutzungsbedingungen</li>
+<li>Einstellungen</li>
+</ul>
+</div>
+</div>
+<script>
+const bat = document.querySelector("#button1");
+bat.addEventListener("click", function(e) {
+e.target.style.background = "blue";
+});
+
+function changeColor () {
+let x = prompt("QUE COLOR KERES GATO?");
+const content = document.querySelector("#ola"); 
+content.style.cssText = ("background-color: " + x + ";");
+}
+</script>
+</body>
+</html>
