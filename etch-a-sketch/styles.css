@@ -1,0 +1,28 @@
+    html {
+        background-color: rgb(2, 117, 212);
+    }
+    .container {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 55px;
+        margin: auto;
+        width: 704px;
+        height: 704px;
+        border-style: solid;
+        border-width: 5px;
+        display: inline-block;
+        padding: 0;
+    }
+    #button1 {
+        position: relative;
+        top: 40px;
+        left: 650px;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    }
+    #button2 {
+        position: relative;
+        top:40px;
+        left: 670px;
+    }
