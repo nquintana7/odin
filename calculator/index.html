@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Calculator project</title>
+</head>
+<body>
+<div class="container">
+<span class="title">WELCOME TO THE ULTIMATE CALCULATOR<BR>ES IST SCHLAUER ALS DICH</span>
+<div id="result">0</div>
+<button class="button" id="clear" onclick="clearAll()">AC</button>
+<button class="button" id="delete" onclick="deleteLast()">DEL</button>
+<button class="button" id="add" onclick="operationClick('add')">+</button>
+<button class="button" id="substract" onclick="operationClick('substract')">-</button>
+<button class="button" id="multiply" onclick="operationClick('multiply')">X</button>
+<button class="button" id="divide" onclick="operationClick('divide')">/</button>
+<button class="button" id="one" onclick="changeDisplayto(1)">1</button>
+<button class="button" id="two" onclick="changeDisplayto(2)">2</button>
+<button class="button" id="three" onclick="changeDisplayto(3)">3</button>
+<button class="button" id="zero" onclick="changeDisplayto(0)">0</button>
+<button class="button" id="four" onclick="changeDisplayto(4)">4</button>
+<button class="button" id="five" onclick="changeDisplayto(5)">5</button>
+<button class="button" id="six" onclick="changeDisplayto(6)">6</button>
+<button class="button" id="dot" onclick="dotFunction()">.</button>
+<button class="button" id="seven" onclick="changeDisplayto(7)">7</button>
+<button class="button" id="eight" onclick="changeDisplayto(8)">8</button>
+<button class="button" id="nine" onclick="changeDisplayto(9)">9</button>
+<button class="button" id="equal" onclick="equalButton()">=</button>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>
