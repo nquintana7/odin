@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+    skip_before_action :require_login, only: [:index, :show]
     include ArticlesHelper
     def index
         @articles = Article.all
@@ -8,6 +9,7 @@ class ArticlesController < ApplicationController
         @comment = Comment.new
         @comment.article_id = @article.id
     end
+
     def new
         @article = Article.new
     end
