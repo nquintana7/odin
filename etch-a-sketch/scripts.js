@@ -10,7 +10,6 @@ document.getElementById("button1").addEventListener("click", function remoCrea()
         divs[i].parentNode.removeChild(divs[i]);
     }
     let size = prompt("How many squares per size this time?");
-    mode = "black";
     createGrid(size, mode);
 })
 document.getElementById("button2").addEventListener("click", function () {

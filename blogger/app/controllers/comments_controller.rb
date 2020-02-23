@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-    skip_before_action :require_login, only[:create]
+    skip_before_action :require_login, only: [:create]
     include CommentsHelper
     def create
         @comment = Comment.new(comment_params)

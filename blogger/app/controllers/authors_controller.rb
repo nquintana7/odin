@@ -1,12 +1,10 @@
 class AuthorsController < ApplicationController
-  before_filter :authenticate_user!
   before_action :set_author, only: [:show, :edit, :update, :destroy]
-  before_filter :zero_authors_or_authenticated, only: [:new, :create]
   # GET /authors
   # GET /authors.json
   def zero_authors_or_authenticated
     unless Author.count == 0 || current_user
-      redirect_to root_path
+      redirect_to articles_path
       return false
     end
   end
@@ -64,7 +62,7 @@ class AuthorsController < ApplicationController
   def destroy
     @author.destroy
     respond_to do |format|
-      format.html { redirect_to authors_url, notice: 'Author was successfully destroyed.' }
+      format.html { redirect_to articles_path, notice: 'Author was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

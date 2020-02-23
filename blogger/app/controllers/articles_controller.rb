@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
-    skip_before_action :require_login, only: [:index, :show]
     include ArticlesHelper
+    skip_before_action :require_login, only: [:index, :show]
+
     def index
         @articles = Article.all
     end
@@ -15,6 +16,7 @@ class ArticlesController < ApplicationController
     end
     def create
         @article = Article.new(article_params)
+        @article.author = current_user
         @article.save
 
         redirect_to article_path(@article)
