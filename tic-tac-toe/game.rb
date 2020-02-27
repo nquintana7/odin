@@ -3,7 +3,7 @@ class Game
     def initialize
         @board = [ [0,0,0], [0,0,0], [0,0,0] ]
     end
-    def play
+    def run
         puts "Welcome to the TicTacToe game, \nPlease insert the coordinates in the form ixj\nIf you want to stop playing, write EXIT"
         Logic.play(self)
         puts "\nThank you for playing!"
@@ -90,8 +90,7 @@ class Logic
         end
     end
 
-
-  
+    private
     def self.check (array)
         che = 0
         che1 = 0
@@ -154,4 +153,4 @@ class Logic
     end
 end
 
-Game.new.play
+Game.new.run
