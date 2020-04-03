@@ -11,12 +11,7 @@ shortest path for a Knight betwenn two positions on a Chess Board.
 I measured the time from my two algorithms, apparently  a BFS Algorithm looks clearly
 faster than a DFS. 
 In this Program the user should input a start and end position. The output would look like:
-  "Write the start and end position please
-   You should write the first two coordinates first like 'x,y' only with numbers from 0 to 7
-   0,0
-   Now please write the coordinates from end position
-   7,7
-   You made it in 6 moves! The path was:
+  "You made it in 6 moves! The path was:
    0, 0
    2, 1
    4, 2
@@ -24,5 +19,3 @@ In this Program the user should input a start and end position. The output would
    4, 4
    6, 5
    7, 7"
-
-
