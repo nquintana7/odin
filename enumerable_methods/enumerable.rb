@@ -82,5 +82,3 @@ module Enumerable
     end
 end
 
-se = Proc.new {|value| value*0}
-puts [2,3,4,5].my_map(se)
